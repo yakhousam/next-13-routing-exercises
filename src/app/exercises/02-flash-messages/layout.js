@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import './styles.css';
+import "./styles.css";
+import ToastProvider from "../../../components/ToastProvider/ToastProvider";
 
 function FlashMsgLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ToastProvider>{children}</ToastProvider>
+      </body>
     </html>
   );
 }
